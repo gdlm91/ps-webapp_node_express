@@ -1,0 +1,22 @@
+{
+  "name": "ps_webapp_node_express",
+  "description": "https://app.pluralsight.com/library/courses/nodejs-express-web-applications",
+  "main": "index.js",
+  "authors": [
+    "Gerardo Leal <gerard.leal91@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
