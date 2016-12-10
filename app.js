@@ -1,5 +1,4 @@
 var express = require('express');
-var handlebars = require('express-handlebars');
 
 var port = process.env.PORT || 3000;
 
@@ -8,14 +7,12 @@ var app = express();
 /** Statics */
 app.use(express.static('public'));
 app.set('views', './src/views');
-
-app.engine('.hbs', handlebars({extname: '.hbs'}));
-app.set('view engine', '.hbs');
+app.set('view engine', 'ejs');
 
 /** Routes */
 app.get('/', function(req, res) {
     res.render('index', {
-        title: 'Hello from Render',
+        title: 'Hello for EJS',
         list: ['a', 'b']
     });
 });

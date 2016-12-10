@@ -31,7 +31,7 @@ gulp.task('inject', function() {
         options: {ignorePath: '/public'}
     };
 
-    return gulp.src('./src/views/*.jade')
+    return gulp.src('./src/views/*.ejs')
         .pipe(wiredep(wiredepConfig.options))
         .pipe(inject(injectConfig.src, injectConfig.options))
         .pipe(gulp.dest('./src/views'));
