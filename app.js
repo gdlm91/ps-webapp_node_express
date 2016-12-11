@@ -12,6 +12,7 @@ var nav = [
 
 var app = express();
 var booksRouter = require('./src/routes/books.routes.js')(nav);
+var adminRouter = require('./src/routes/admin.routes.js')(nav);
 
 /** Statics */
 /////////////
@@ -37,6 +38,7 @@ app.get('/', function (req, res) {
 });
 
 app.use('/books', booksRouter);
+app.use('/admin', adminRouter);
 
 
 /** App Bootstrap */
