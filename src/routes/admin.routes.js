@@ -21,7 +21,7 @@ var books = [
         genre: 'Science Fiction',
         author: 'H. G. Wells',
         read: false
-        },
+    },
     {
         title: 'A Journey into the Center of the Earth',
         genre: 'Science Fiction',
